@@ -1,0 +1,4 @@
+#Mon Jun 10 18:05:18 EEST 2019
+base.0=D\:\\Documents\\AndroidApps\\ResideMenu\\app-quiz\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex

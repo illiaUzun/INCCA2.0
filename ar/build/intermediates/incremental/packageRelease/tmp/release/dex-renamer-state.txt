@@ -1,0 +1,4 @@
+#Mon Jun 10 17:54:14 EEST 2019
+base.0=D\:\\Documents\\AndroidApps\\ResideMenu\\ar\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex
