@@ -21,6 +21,7 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
     private ResideMenuItem itemSettings;
     private ResideMenuItem itemMessage;
     private ResideMenuItem itemFriends;
+    private ResideMenuItem itemMainBuildingsInfo;
     private ResideMenuItem itemEvents;
 
     /**
@@ -54,6 +55,7 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
         itemSettings = new ResideMenuItem(this, R.drawable.ic_camera_alt_black_24dp, "AR-Візитка");
         itemMessage  = new ResideMenuItem(this, R.drawable.ic_videogame_asset_black_24dp,  "Ігри");
         itemFriends  = new ResideMenuItem(this, R.drawable.ic_camera_alt_black_24dp,  "AR-Візитка");
+        itemMainBuildingsInfo  = new ResideMenuItem(this, R.drawable.ic_menu_1,  "Главная инфа");
 //        itemEvents  = new ResideMenuItem(this, R.drawable.ic_dark_events,  "Events");
 
         itemHome.setOnClickListener(this);
@@ -62,6 +64,7 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
         itemSettings.setOnClickListener(this);
         itemMessage.setOnClickListener(this);
         itemFriends.setOnClickListener(this);
+        itemMainBuildingsInfo.setOnClickListener(this);
 
 
 
@@ -72,6 +75,7 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
         resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemMessage, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemFriends, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(itemMainBuildingsInfo, ResideMenu.DIRECTION_LEFT);
 //        resideMenu.addMenuItem(itemEvents, ResideMenu.DIRECTION_LEFT);
 
         // You can disable a direction by setting ->
@@ -107,6 +111,8 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
             changeFragment(new MessageFragment());
         }else if (view == itemFriends){
             open();
+        }else if (view == itemMainBuildingsInfo){
+            changeFragment(new BuildingMainInfoFragment());
         }
 
         resideMenu.closeMenu();

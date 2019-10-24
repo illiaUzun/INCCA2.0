@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Documents\\AndroidApps\\ResideMenu\\phylsApp\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
+            "outputFile": "C:\\Users\\yunha\\Desktop\\tspp\\multy-modulePhylApp\\phylsApp\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Пользователь\\.gradle\\caches\\transforms-2\\files-2.1\\82073706be95fd4b85b301170dec7bee\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "source": "C:\\Users\\yunha\\.gradle\\caches\\transforms-2\\files-2.1\\921146865b596e347da739fba923cd90\\res\\values-zh-rHK\\values-zh-rHK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Пользователь\\.gradle\\caches\\transforms-2\\files-2.1\\fe5f8ab9af8a97e5ce00dd8705c51f43\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "source": "C:\\Users\\yunha\\.gradle\\caches\\transforms-2\\files-2.1\\4261dcfa53fd595ccf1a5e2b0bc7259d\\res\\values-zh-rHK\\values-zh-rHK.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
