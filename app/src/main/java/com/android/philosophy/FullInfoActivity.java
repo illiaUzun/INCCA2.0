@@ -19,11 +19,10 @@ public class FullInfoActivity extends Activity {
         ImageAdapter imageAdapter = new ImageAdapter(this);
         GridElement gridElement = (GridElement)imageAdapter.getItem(position);
 
-
-
         ImageView imageView = (ImageView) findViewById(R.id.full_image);
         TextView textView = (TextView) findViewById(R.id.full_text);
         imageView.setImageResource(gridElement.getImage());
+        textView.setText(R.string.grid_onpu);
         //textView.setText()
 
     }

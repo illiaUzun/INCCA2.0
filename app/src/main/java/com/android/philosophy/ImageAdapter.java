@@ -25,10 +25,10 @@ public class ImageAdapter extends BaseAdapter {
 
     private ArrayList<GridElement> fillArray(ArrayList<GridElement> gridElements) {
         gridElements = new ArrayList<>();
-        gridElements.add(new GridElement(R.drawable.grid_guk, "ОНПУ"));
-        gridElements.add(new GridElement(R.drawable.grid_gov, "Мэрия"));
-        gridElements.add(new GridElement(R.drawable.grid_kirha, "Лютеранская церковь"));
-        gridElements.add(new GridElement(R.drawable.grid_opera, "Оперный"));
+        gridElements.add(new GridElement(R.drawable.grid_guk, "Одесский национальный политехничный университет"));
+        gridElements.add(new GridElement(R.drawable.grid_gov, "Одесский городской совет"));
+        gridElements.add(new GridElement(R.drawable.grid_kirha, "Лютеранская церковь (Кирха)"));
+        gridElements.add(new GridElement(R.drawable.grid_opera, "Одесский государственный академический театр оперы и балета"));
         return gridElements;
     }
 
