@@ -6,6 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/app-quiz/app-quiz.iml" filepath="$PROJECT_DIR$/app-quiz/app-quiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/ar/ar.iml" filepath="$PROJECT_DIR$/ar/ar.iml" />
       <module fileurl="file://$PROJECT_DIR$/multy-modulePhylApp.iml" filepath="$PROJECT_DIR$/multy-modulePhylApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/name.iml" filepath="$PROJECT_DIR$/name.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/name-app.iml" filepath="$PROJECT_DIR$/app/name-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-quiz/name-app-quiz.iml" filepath="$PROJECT_DIR$/app-quiz/name-app-quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ar/name-ar.iml" filepath="$PROJECT_DIR$/ar/name-ar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phylsApp/name-phylsApp.iml" filepath="$PROJECT_DIR$/phylsApp/name-phylsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uiz/name-uiz.iml" filepath="$PROJECT_DIR$/uiz/name-uiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/phylsApp/phylsApp.iml" filepath="$PROJECT_DIR$/phylsApp/phylsApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/uiz/uiz.iml" filepath="$PROJECT_DIR$/uiz/uiz.iml" />
     </modules>

@@ -2,7 +2,10 @@ package com.android.philosophy;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,13 +20,23 @@ public class FullInfoActivity extends Activity {
         int position = i.getExtras().getInt("id");
 
         ImageAdapter imageAdapter = new ImageAdapter(this);
-        GridElement gridElement = (GridElement)imageAdapter.getItem(position);
+        final GridElement gridElement = (GridElement) imageAdapter.getItem(position);
 
-        ImageView imageView = (ImageView) findViewById(R.id.full_image);
-        TextView textView = (TextView) findViewById(R.id.full_text);
-        imageView.setImageResource(gridElement.getImage());
-        textView.setText(R.string.grid_onpu);
-        //textView.setText()
+        ImageView buildingPhoto = (ImageView) findViewById(R.id.full_image);
+        TextView descriptionText = (TextView) findViewById(R.id.full_text);
+        Button button = (Button) findViewById(R.id.full_button);
+
+        buildingPhoto.setImageResource(gridElement.getImage());
+        descriptionText.setText(gridElement.getDescription());
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(gridElement.getLink()));
+                startActivity(browserIntent);
+            }
+        });
+
 
     }
 

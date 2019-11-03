@@ -25,10 +25,22 @@ public class ImageAdapter extends BaseAdapter {
 
     private ArrayList<GridElement> fillArray(ArrayList<GridElement> gridElements) {
         gridElements = new ArrayList<>();
-        gridElements.add(new GridElement(R.drawable.grid_guk, "Одесский национальный политехничный университет"));
-        gridElements.add(new GridElement(R.drawable.grid_gov, "Одесский городской совет"));
-        gridElements.add(new GridElement(R.drawable.grid_kirha, "Лютеранская церковь (Кирха)"));
-        gridElements.add(new GridElement(R.drawable.grid_opera, "Одесский государственный академический театр оперы и балета"));
+        gridElements.add(new GridElement(R.drawable.grid_guk,
+                "Одесский национальный политехничный университет",
+                mContext.getString(R.string.grid_onpu),
+                mContext.getString(R.string.onpu_link)));
+        gridElements.add(new GridElement(R.drawable.grid_gov,
+                "Одесский городской совет",
+                mContext.getString(R.string.grid_town_hall),
+                mContext.getString(R.string.town_hall_link)));
+        gridElements.add(new GridElement(R.drawable.grid_kirha,
+                "Лютеранская церковь (Кирха)",
+                mContext.getString(R.string.grid_church),
+                mContext.getString(R.string.church_link)));
+        gridElements.add(new GridElement(R.drawable.grid_opera,
+                "Одесский государственный академический театр оперы и балета",
+                mContext.getString(R.string.grid_opera),
+                mContext.getString(R.string.opera_link)));
         return gridElements;
     }
 
