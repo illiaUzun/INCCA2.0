@@ -26,7 +26,7 @@ public class BuildingMainInfoFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
 
         GridView gridView = (GridView) getView().findViewById(R.id.grid_view);
-        gridView.setBackgroundResource(R.drawable.odessa);
+        gridView.setBackgroundResource(R.drawable.fountain);
 
         gridView.setAdapter(new ImageAdapter(getContext()));
 

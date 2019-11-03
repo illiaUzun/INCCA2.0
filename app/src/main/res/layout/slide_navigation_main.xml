@@ -34,7 +34,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:padding="7dp"
-                android:text="Кафедра філософії та методології"
+                android:text="Туристический гид"
                 android:textColor="@color/toolbar_text_color"
                 android:textSize="@dimen/toolbar_text_size" />
 

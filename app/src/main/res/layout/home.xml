@@ -18,8 +18,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:background="@drawable/main_sc"
+                android:layout_height="236dp"
+                android:background="@drawable/odessa_main"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -29,23 +29,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginBottom="20dp" />
 
-                <customfonts.MyTextView1
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginBottom="12dp"
-                    android:text="Філософський додаток"
-                    android:textColor="#fff"
-                    android:textSize="16dp" />
-
             </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
 
 
             <LinearLayout
@@ -59,15 +43,15 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="20dp"
                     android:lineSpacingExtra="3dp"
-                    android:text='Вітаємо вас у мобільному додатку кафедри "Філософії та Методології Науки" Гуманітарного факультету Одеського Національного Політехнічного Університету!'
+                    android:text="Добро пожаловать в мобильный туристический гид по городу-герою Одессе"
                     android:textSize="16dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
+                    android:layout_height="220dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/main_pic"
+                    android:background="@drawable/fontan"
                     android:clipToPadding="false"
                     android:gravity="center"
                     android:orientation="horizontal" />
@@ -79,181 +63,8 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:lineSpacingExtra="3dp"
-                    android:text="У додатку ви можете отримати актуальну інформацію про кафедру, а також отримати матеріали з навчання та дізнатися багато нового. Успішного користування."
+                    android:text="В данном мобильном приложении вы сможете получить интересную информацию о городе и его достопримечательностях, а так-же воспользоваться Дополненной Реальностью для визуализации исторического вида зданий города"
                     android:textSize="16dp" />
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/onpu"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/onpu"
-                    android:gravity="center">
-
-                </LinearLayout>
-
-                <customfonts.MyTextView
-                    android:layout_width="411dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="center|left"
-                    android:text="ОНПУ"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/gum"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/logo_hsf"
-                    android:gravity="center">
-
-                </LinearLayout>
-
-                <customfonts.MyTextView
-                    android:layout_width="411dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="center|left"
-                    android:text="Гуманітарний факультет"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/kfafil"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/logo_img"
-                    android:gravity="center">
-
-                </LinearLayout>
-
-                <customfonts.MyTextView
-                    android:layout_width="411dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="center|left"
-                    android:text="Кафедра філософії та методології"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/facebook"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/facebook"
-                    android:gravity="center">
-
-                </LinearLayout>
-
-                <customfonts.MyTextView
-                    android:id="@+id/boo"
-                    android:layout_width="411dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="center|left"
-                    android:text="Facebook кафедри"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
-
-
-                <customfonts.MyTextView
-                    android:id="@+id/myTextView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="Кафедра Філософії та Методології"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <customfonts.MyTextView
-                    android:id="@+id/myTextView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="center|left"
-                    android:text="Поштова адреса: 65044, м. Одеса-44, пр. Шевченка, 1, ОНПУ, ГФ, кафедра ФМН. "
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <customfonts.MyTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="center"
-                    android:text="Кабінети: корп. РТФ, аудиторії 512р, 513р."
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <customfonts.MyTextView
-                    android:id="@+id/myTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="center|left"
-                    android:text="Телефоны: +38 048 7348 692, +38 048 7348 691"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <customfonts.MyTextView
-                    android:id="@+id/myTextView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="center|left"
-                    android:text="E-Mail: kfm_16@ua.fm"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
 
 
             </LinearLayout>

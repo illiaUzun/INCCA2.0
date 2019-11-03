@@ -9,17 +9,19 @@
               android:paddingBottom="15dp">
 
     <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:scaleType="centerCrop"
-            android:id="@+id/iv_icon"/>
+        android:id="@+id/iv_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop" />
 
     <customfonts.MyTextView1
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:textColor="@android:color/white"
+        android:background="#00FFFFFF"
+        android:textColor="#FFFFFF"
         android:textSize="18dp" />
 
 </LinearLayout>

@@ -8,17 +8,16 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
-import android.widget.Button;
 
 
-public class Slide_Navigation_Main extends FragmentActivity implements View.OnClickListener{
+public class Slide_Navigation_Main extends FragmentActivity implements View.OnClickListener {
 
     private ResideMenu resideMenu;
     private Slide_Navigation_Main mContext;
     private ResideMenuItem itemHome;
     private ResideMenuItem itemProfile;
     private ResideMenuItem itemCalendar;
-    private ResideMenuItem itemSettings;
+    private ResideMenuItem itemAR;
     private ResideMenuItem itemMessage;
     private ResideMenuItem itemFriends;
     private ResideMenuItem itemMainBuildingsInfo;
@@ -33,7 +32,7 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
         setContentView(R.layout.slide_navigation_main);
         mContext = this;
         setUpMenu();
-        if( savedInstanceState == null )
+        if (savedInstanceState == null)
             changeFragment(new HomeFragment());
     }
 
@@ -41,41 +40,25 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
 
         // attach to current activity;
         resideMenu = new ResideMenu(this);
-       resideMenu.setUse3D(true);resideMenu.setBackground(R.drawable.philosophy);
+        resideMenu.setUse3D(true);
+        resideMenu.setBackground(R.drawable.odessa);
         resideMenu.attachToActivity(this);
         resideMenu.setMenuListener(menuListener);
-        //valid scale factor is between 0.0f and 1.0f. leftmenu'width is 150dip. 
-       // resideMenu.setScaleValue(0.6f);
+        //valid scale factor is between 0.0f and 1.0f. leftmenu'width is 150dip.
+        // resideMenu.setScaleValue(0.6f);
 
         // create menu items;
-        itemHome     = new ResideMenuItem(this, R.drawable.ic_home_dark,     "Головна сторінка");
-        itemProfile  = new ResideMenuItem(this, R.drawable.ic_dark_profile,  "Корисні ресурси");
-        itemProfile  = new ResideMenuItem(this, R.drawable.ic_dark_profile,  "Корисні ресурси");
-        itemCalendar = new ResideMenuItem(this, R.drawable.ic_videogame_asset_black_24dp, "Ігри");
-        itemSettings = new ResideMenuItem(this, R.drawable.ic_camera_alt_black_24dp, "AR-Візитка");
-        itemMessage  = new ResideMenuItem(this, R.drawable.ic_videogame_asset_black_24dp,  "Ігри");
-        itemFriends  = new ResideMenuItem(this, R.drawable.ic_camera_alt_black_24dp,  "AR-Візитка");
-        itemMainBuildingsInfo  = new ResideMenuItem(this, R.drawable.ic_menu_1,  "Главная инфа");
-//        itemEvents  = new ResideMenuItem(this, R.drawable.ic_dark_events,  "Events");
+        itemHome = new ResideMenuItem(this, R.drawable.home, "Главная страница");
+        itemMainBuildingsInfo = new ResideMenuItem(this, R.drawable.book, "Одесская библиотека");
+        itemAR = new ResideMenuItem(this, R.drawable.camera, "Дополненная реальность");
 
         itemHome.setOnClickListener(this);
-        itemProfile.setOnClickListener(this);
-        itemCalendar.setOnClickListener(this);
-        itemSettings.setOnClickListener(this);
-        itemMessage.setOnClickListener(this);
-        itemFriends.setOnClickListener(this);
+        itemAR.setOnClickListener(this);
         itemMainBuildingsInfo.setOnClickListener(this);
 
-
-
-//        itemEvents.setOnClickListener(this);
-
-
         resideMenu.addMenuItem(itemHome, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(itemMessage, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(itemFriends, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemMainBuildingsInfo, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(itemAR, ResideMenu.DIRECTION_LEFT);
 //        resideMenu.addMenuItem(itemEvents, ResideMenu.DIRECTION_LEFT);
 
         // You can disable a direction by setting ->
@@ -103,32 +86,34 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
     @Override
     public void onClick(View view) {
 
-        if (view == itemHome){
+        if (view == itemHome) {
             changeFragment(new HomeFragment());
-        }else if (view == itemProfile){
+        } else if (view == itemProfile) {
             changeFragment(new ProfileFragment());
-        }else if (view == itemMessage){
+        } else if (view == itemMessage) {
             changeFragment(new MessageFragment());
-        }else if (view == itemFriends){
+        } else if (view == itemFriends) {
             open();
-        }else if (view == itemMainBuildingsInfo){
+        } else if (view == itemMainBuildingsInfo) {
             changeFragment(new BuildingMainInfoFragment());
         }
 
         resideMenu.closeMenu();
     }
+
     @SuppressLint("NewApi")
-    private void open(){
+    private void open() {
         Intent launchIntent = null;
 
-        try{
+        try {
             launchIntent = getApplicationContext().getPackageManager().getLeanbackLaunchIntentForPackage("com.vuforia.engine.CoreSamples");
-        } catch (java.lang.NoSuchMethodError e){
+        } catch (java.lang.NoSuchMethodError e) {
         }
 
-        if (launchIntent == null) launchIntent = getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.vuforia.engine.CoreSamples");
+        if (launchIntent == null)
+            launchIntent = getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.vuforia.engine.CoreSamples");
 
-        if (launchIntent != null)  {
+        if (launchIntent != null) {
             launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             getApplicationContext().startActivity(launchIntent);
         } else {
@@ -138,6 +123,7 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
         }
 
     }
+
     private ResideMenu.OnMenuListener menuListener = new ResideMenu.OnMenuListener() {
         @Override
         public void openMenu() {
@@ -150,7 +136,7 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
         }
     };
 
-    private void changeFragment(Fragment targetFragment){
+    private void changeFragment(Fragment targetFragment) {
         resideMenu.clearIgnoredViewList();
         getSupportFragmentManager()
                 .beginTransaction()
@@ -160,7 +146,7 @@ public class Slide_Navigation_Main extends FragmentActivity implements View.OnCl
     }
 
     // What good method is to access resideMenu？
-    public ResideMenu getResideMenu(){
+    public ResideMenu getResideMenu() {
         return resideMenu;
     }
 }
